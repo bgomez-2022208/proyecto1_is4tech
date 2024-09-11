@@ -1,0 +1,17 @@
+<p>dogs works!</p>
+
+
+<div *ngIf="dogImageUrl">
+  <img [src]="dogImageUrl" alt="Random Dog Image">
+  <button (click)="onReloadImage()">Get New Image</button>
+</div>
+<div *ngIf="!dogImageUrl">
+  <p>Loading...</p>
+</div>
+
+<div>
+  <textarea (input)="onTextChange($event)" placeholder="texto"></textarea>
+  <div>
+    <textarea [value]="trimmedText" readonly></textarea>
+  </div>
+</div>
