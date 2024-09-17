@@ -7,8 +7,6 @@ import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, DogsComponent, HttpClientTestingModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 
